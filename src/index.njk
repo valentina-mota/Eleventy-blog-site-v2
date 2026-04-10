@@ -1,43 +1,85 @@
 ---
-title: Blog Homepage
+title: VM Blog
 layout: "base.njk"
 ---
 
+<!-- ═══════════════════════════════════════════ HERO -->
 <section class="hero">
-  <div class="container flow">
-    <div class="hero__content flow">
-      <h1 class="section-title">Welcome to my blog!</h1>
-      <p>
-        This blog showcases a web project built using <span>JAMstack architecture</span>.</p>
-        <p>By combining <span>Eleventy</span> for static site generation and <span>Nunjucks</span> for templating, it ensures both performance and scalability, while the site is securely deployed via a CDN using <span>Netlify</span>, enhancing speed and security.
-      </p>
-      <p>
-        Below you’ll find some of my top articles, covering front-end development best practices, web performance, and more.</p>
-        <p>To see all posts, head over to the Archive page.
-      </p>
-      <!-- <div class="flex-group">
-        <a href="#featured-articles" class="btn btn--primary"
-          >Featured articles</a
-        >
-        <a href="./blog.html" class="btn btn--neutral">Most recent articles</a>
-      </div> -->
+  <div class="container hero-grid">
+
+    <!-- Left: image + title + CTA -->
+    <div class="hero-left">
+      <div class="hero-image-wrap">
+        <img
+          src="assets/blog/blog-cover_hero-panel.png"
+          alt="Old Classic Computer On Retro Desk"
+          class="hero-img"
+        />
+      </div>
+      <div class="hero-body">
+        <p class="hero-kicker">Frontend notes, essays &amp; experiments</p>
+        <h1 class="hero-title">
+          Writing about the web,<br>
+          <em>one post at a time</em>
+        </h1>
+        <p class="hero-text">
+          A space for articles on frontend development, web design,
+          performance and digital culture.
+        </p>
+        <a href="#featured-posts" class="btn-hero">Read featured posts</a>
+      </div>
     </div>
-    <div>
-      <img
-        src="assets/blog/chris-thornton-o5YiJfje4ZQ-unsplash.jpg"
-        alt=""
-        class="hero__image"
-      />
-    </div>
+
+    <!-- Right: dark panel with recent posts -->
+    <aside class="hero-panel">
+      <h2 class="hero-panel-title">New</h2>
+      <ul class="hero-panel-list">
+        {%- for post in collections.post | reverse -%}
+          {%- if loop.index <= 3 -%}
+          <li class="hero-panel-item">
+            <a href="{{ post.url }}">
+              <span class="hero-panel-post-title">{{ post.data.title }}</span>
+              <span class="hero-panel-post-desc">{{ post.data.description | truncate(80) }}</span>
+            </a>
+          </li>
+          {%- endif -%}
+        {%- endfor %}
+      </ul>
+      <a href="/blog/" class="hero-panel-link">Browse all articles →</a>
+    </aside>
+
   </div>
 </section>
 
-<section id="featured-articles" class="featured-articles">
-  <div class="container flow">
-    <h2 class="section-title text-center">Featured articles</h2>
-    <ul role="list" class="articles__list flow">
-      {%- for post in collections.featured | reverse -%} {% include
-      "article-snippet.njk" %} {%- endfor %}
-    </ul>
+<!-- ═══════════════════════════════════════════ FEATURED + SIDEBAR -->
+<section class="featured-section" id="featured-posts">
+  <div class="container featured-with-sidebar">
+
+    <!-- Main: featured grid -->
+    <div class="featured-main">
+      <div class="featured-header">
+        <div>
+          <p class="section-kicker">Editorial selection</p>
+          <h2 class="section-heading">Featured posts</h2>
+        </div>
+        <a href="/blog/" class="featured-archive-link">View all →</a>
+      </div>
+
+      <div class="featured-grid" id="featured-grid">
+        {%- for post in collections.featured | reverse -%}
+          {% include "article-featured.njk" %}
+        {%- endfor %}
+      </div>
+
+      <p class="archive-empty" id="featured-empty" style="display:none">
+        No articles found for this selection.
+      </p>
+    </div>
+
+    <!-- Sidebar -->
+    {% include "sidebar-home.njk" %}
+
   </div>
 </section>
+
+<script src="/assets/filter-home.js"></script>

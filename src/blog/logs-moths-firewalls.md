@@ -6,6 +6,7 @@ tags: ["post", "featured"]
 image: /assets/blog/from-log-to-firewall-blog-cover_1440x1080.png
 imageAlt:
 description: From sailors’ logs to digital firewalls, exploring the metaphors that shaped the language of computing.
+category: Computing
 ---
 The language of computing comes from centuries of human work, sailors, builders, physicians, soldiers.
 

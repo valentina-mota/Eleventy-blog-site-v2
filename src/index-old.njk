@@ -1,0 +1,97 @@
+---
+title: VM Blog
+layout: "base.njk"
+---
+
+<!-- ═══════════════════════════════════════════ HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <!-- Left: image + title + CTA -->
+    <div class="hero-left">
+      <div class="hero-image-wrap">
+        <img
+          src="assets/blog/blog-cover_hero-panel.png"
+          alt="Old classic computer on retro desk"
+          class="hero-img"
+        />
+      </div>
+      <div class="hero-body">
+        <p class="hero-kicker">Frontend notes, essays &amp; experiments</p>
+        <h1 class="hero-title">
+          Writing about the web,<br>
+          <em>one post at a time</em>
+        </h1>
+        <p class="hero-text">
+          A space for articles on frontend development, web design,
+          performance and digital culture.
+        </p>
+        <a href="#featured-posts" class="btn-hero">Read featured posts</a>
+      </div>
+    </div>
+
+    <!-- Right: dark panel with recent posts -->
+    <aside class="hero-panel">
+      <h2 class="hero-panel-title">New</h2>
+      <ul class="hero-panel-list">
+        {%- for post in collections.post | reverse -%}
+          {%- if loop.index <= 3 -%}
+          <li class="hero-panel-item">
+            <a href="{{ post.url }}">
+              <span class="hero-panel-post-title">{{ post.data.title }}</span>
+              <span class="hero-panel-post-desc">{{ post.data.description | truncate(80) }}</span>
+            </a>
+          </li>
+          {%- endif -%}
+        {%- endfor %}
+      </ul>
+
+      <!-- <div class="widget widget-guest-author hero-panel-guest-author-widget">
+    <h3>Guest Author</h3>
+    <div class="guest-author">
+      <img
+        src="/assets/veronica-paolucci-photo.jpg"
+        alt="Veronica Paolucci"
+        class="guest-author-photo"
+      />
+      <div class="guest-author-info">
+        <strong class="guest-author-name">Veronica Paolucci</strong>
+        <span class="guest-author-role">Cybersecurity Specialist</span>
+      </div>
+    </div>
+    <p class="guest-author-bio">
+      Veronica writes and talks about cybersecurity in plain language, from phishing
+      to AI threats, from real hacking cases to digital self-defence.
+    </p>
+    <button class="category-btn guest-category-btn" data-category="cyber security">
+      Read Veronica's articles
+    </button>
+      </div> -->
+
+      <a href="/blog/" class="hero-panel-link">Browse all articles →</a>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FEATURED -->
+<section class="featured-section" id="featured-posts">
+  <div class="container">
+
+    <div class="featured-header">
+      <div>
+        <p class="section-kicker">Editorial selection</p>
+        <h2 class="section-heading">Featured posts</h2>
+      </div>
+      <a href="/blog/" class="featured-archive-link">View all →</a>
+    </div>
+
+    <div class="featured-grid">
+      {%- for post in collections.featured | reverse -%}
+        {% include "article-featured.njk" %}
+      {%- endfor %}
+    </div>
+
+  </div>
+</section>
+

@@ -5,7 +5,8 @@ date:
 tags: ["post", "featured"]
 image: /assets/blog/japanese-web-design-feat-img-blog.png
 imageAlt: 
-description: Explore the cultural contrasts between Western minimalist and Japanese maximalist web design. This article delves into how cultural values, language, and psychology shape user experience, comparing detailed, content-rich designs in Japan with clean, simple layouts in the West.
+description: Explore the cultural contrasts between Western minimalist and Japanese maximalist web design.
+category: CSS
 ---
 
 
@@ -26,6 +27,7 @@ This concept applies strongly to web design. Today, web design guides beauty thr
 In a globalized world, there's a risk that an "economy lingo" could dominate all aspects of **culture**. However, cultural peculiarities persist, and it's in these nuances that **beauty in design** can differ significantly.
 
 A striking comparison can be made between **East Asian** and **USA-European aesthetics** in web design. Websites should not follow a one-size-fits-all model, as ignoring cultural subtleties can lead to exclusion, misunderstandings, and poor user experience.
+
 ![Yahoo JP / Yahoo USA](/assets/blog/japanese-web-design_2.png)
 <p class ="caption">Yahoo JP / Yahoo USA</p>
 <br>
@@ -66,16 +68,13 @@ On the other hand, **Western web design** often favors a minimalist style, empha
 
 So, perhaps, beauty just rests in the hands of the **chooser** - shaped by the culture they belong to.
 
-### Featured image
-
+## Featured image
 [Canva.com](https://www.canva.com/){target="_blank", rel="noopener noreferrer"}
 
-### Images
-
+## Images
 Fair Use Disclaimer - The images and content used in this document are for the purposes of critique, commentary, and comparative analysis. This use is covered under fair use laws, as the use is transformative and does not negatively impact the market of the original work. All images and content belong to their respective owners.
 
-### References
-
+## References
 Maxwell Forrest, <a href="https://www.uxresearch.jp/blog/japanese-web-design" target="_blank" rel="noopener noreferrer"><em><strong>The Overwhelming World of Japanese Web Design</strong></em></a>
 
 Sarransh Agrawal, <a href="https://www.prodt.co/blogs/the-art-of-the-cluttered-website-why-japanese-web-design-is-so-unique" target="_blank" rel="noopener noreferrer"><em><strong>The Art of the Cluttered Website: Why Japanese Web Design is So Unique</strong></em></a>

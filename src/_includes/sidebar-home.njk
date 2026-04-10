@@ -1,0 +1,36 @@
+<aside class="sidebar">
+
+  <div class="widget">
+    <h3>Recent posts</h3>
+    <ul class="recent-posts">
+      {%- for post in collections.post | reverse -%}
+        {%- if loop.index <= 4 -%}
+          <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endif -%}
+      {%- endfor %}
+    </ul>
+  </div>
+
+  <div class="widget widget-guest-author">
+    <h3>Guest Author</h3>
+    <div class="guest-author">
+      <img
+        src="/assets/veronica-paolucci-photo.jpg"
+        alt="Veronica Paolucci"
+        class="guest-author-photo"
+      />
+      <div class="guest-author-info">
+        <strong class="guest-author-name">Veronica Paolucci</strong>
+        <span class="guest-author-role">Cybersecurity Specialist</span>
+      </div>
+    </div>
+    <p class="guest-author-bio">
+      Veronica writes and talks about cybersecurity in plain language — from phishing
+      to AI threats, from real hacking cases to digital self-defence.
+    </p>
+    <button class="category-btn guest-category-btn" id="veronica-filter-btn" data-category="cybersecurity">
+      Read Veronica's articles
+    </button>
+  </div>
+
+</aside>

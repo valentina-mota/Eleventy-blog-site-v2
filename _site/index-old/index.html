@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A personal tech blog built with JAMstack technology, featuring articles on modern web development.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://vm-webdev-tech-blog.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog Homepage">
+    <meta property="og:description" content="A personal tech blog built with JAMstack technology, featuring articles on modern web development.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/valentina-mota/web-images/refs/heads/main/opengraph-thumbnail-1200x630.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="vm-webdev-tech-blog.netlify.app">
+    <meta property="twitter:url" content="https://vm-webdev-tech-blog.netlify.app">
+    <meta name="twitter:title" content="Blog Homepage">
+    <meta name="twitter:description" content="A personal tech blog built with JAMstack technology, featuring articles on modern web development.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/valentina-mota/web-images/refs/heads/main/opengraph-thumbnail-1200x630.png">
+
+    <!-- Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+
+    <title>VM Blog</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/logo/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+  <div class="container">
+    <div class="page-header__content">
+      <div class="header__img">
+        <a
+          href="https://vm-webdev-tech-blog.netlify.app/"
+          ><img
+            src="https://raw.githubusercontent.com/valentina-mota/web-images/refs/heads/main/vm_logo-blog.png"
+            alt="Valentina Mota blog logo"
+        /></a>
+      </div>
+      <nav>
+        <ul role="list" class="nav-list flex-group">
+          <li>
+            <a href="/">BLOG</a>
+          </li>
+          <li>
+            <a href="/blog/">ARCHIVE</a>
+          </li>
+          <li>
+            <a href="https://valentinamota.me" rel = "noreferrer noopener" target="_blank"> PORTFOLIO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main>
+      
+<!-- ═══════════════════════════════════════════ HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <!-- Left: image + title + CTA -->
+    <div class="hero-left">
+      <div class="hero-image-wrap">
+        <img
+          src="assets/blog/blog-cover_hero-panel.png"
+          alt="Old classic computer on retro desk"
+          class="hero-img"
+        />
+      </div>
+      <div class="hero-body">
+        <p class="hero-kicker">Frontend notes, essays &amp; experiments</p>
+        <h1 class="hero-title">
+          Writing about the web,<br>
+          <em>one post at a time</em>
+        </h1>
+        <p class="hero-text">
+          A space for articles on frontend development, web design,
+          performance and digital culture.
+        </p>
+        <a href="#featured-posts" class="btn-hero">Read featured posts</a>
+      </div>
+    </div>
+
+    <!-- Right: dark panel with recent posts -->
+    <aside class="hero-panel">
+      <h2 class="hero-panel-title">New</h2>
+      <ul class="hero-panel-list"><li class="hero-panel-item">
+            <a href="/blog/veronica-paolucci-voice-assistants/">
+              <span class="hero-panel-post-title">Do Voice Assistants Really Listen to Everything We Say?</span>
+              <span class="hero-panel-post-desc">Voice assistants don’t listen to everything, but they hear more than you think....</span>
+            </a>
+          </li><li class="hero-panel-item">
+            <a href="/blog/logs-moths-firewalls/">
+              <span class="hero-panel-post-title">Logs, moths and firewalls. The evolution of computing language</span>
+              <span class="hero-panel-post-desc">From sailors’ logs to digital firewalls, exploring the metaphors that shaped the...</span>
+            </a>
+          </li><li class="hero-panel-item">
+            <a href="/blog/node-js-the-silent-engine-of-modern-web-apps/">
+              <span class="hero-panel-post-title">Node.js, the silent engine of modern web apps</span>
+              <span class="hero-panel-post-desc">In this article, we&#39;ll dive into what Node.js is, why it&#39;s so popular, and a few...</span>
+            </a>
+          </li>
+      </ul>
+
+      <!-- <div class="widget widget-guest-author hero-panel-guest-author-widget">
+    <h3>Guest Author</h3>
+    <div class="guest-author">
+      <img
+        src="/assets/veronica-paolucci-photo.jpg"
+        alt="Veronica Paolucci"
+        class="guest-author-photo"
+      />
+      <div class="guest-author-info">
+        <strong class="guest-author-name">Veronica Paolucci</strong>
+        <span class="guest-author-role">Cybersecurity Specialist</span>
+      </div>
+    </div>
+    <p class="guest-author-bio">
+      Veronica writes and talks about cybersecurity in plain language, from phishing
+      to AI threats, from real hacking cases to digital self-defence.
+    </p>
+    <button class="category-btn guest-category-btn" data-category="cyber security">
+      Read Veronica's articles
+    </button>
+      </div> -->
+
+      <a href="/blog/" class="hero-panel-link">Browse all articles →</a>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FEATURED -->
+<section class="featured-section" id="featured-posts">
+  <div class="container">
+
+    <div class="featured-header">
+      <div>
+        <p class="section-kicker">Editorial selection</p>
+        <h2 class="section-heading">Featured posts</h2>
+      </div>
+      <a href="/blog/" class="featured-archive-link">View all →</a>
+    </div>
+
+    <div class="featured-grid"><article class="feat-card" data-category="Cybersecurity">
+  <a href="/blog/veronica-paolucci-voice-assistants/" class="feat-card-image-link">
+    <img
+      src="/assets/blog/veronica-paolucci-alexa-blog.png"
+      alt=""
+      class="feat-card-image"
+      loading="lazy"
+    />
+  </a>
+  <div class="feat-card-content">
+    <div class="post-meta">
+      
+        <span class="post-category">Cybersecurity</span>
+      
+      
+        <span class="post-guest">✍ Veronica Paolucci</span>
+      
+    </div>
+    <h3 class="feat-card-title">
+      <a href="/blog/veronica-paolucci-voice-assistants/">Do Voice Assistants Really Listen to Everything We Say?</a>
+    </h3>
+    <p class="feat-card-excerpt">Voice assistants don’t listen to everything, but they hear more than you think. Here’s how they work and where the real risks lie.</p>
+    <a href="/blog/veronica-paolucci-voice-assistants/" class="read-more">Continue reading</a>
+  </div>
+</article>
+<article class="feat-card" data-category="Computing">
+  <a href="/blog/logs-moths-firewalls/" class="feat-card-image-link">
+    <img
+      src="/assets/blog/from-log-to-firewall-blog-cover_1440x1080.png"
+      alt=""
+      class="feat-card-image"
+      loading="lazy"
+    />
+  </a>
+  <div class="feat-card-content">
+    <div class="post-meta">
+      
+        <span class="post-category">Computing</span>
+      
+      
+    </div>
+    <h3 class="feat-card-title">
+      <a href="/blog/logs-moths-firewalls/">Logs, moths and firewalls. The evolution of computing language</a>
+    </h3>
+    <p class="feat-card-excerpt">From sailors’ logs to digital firewalls, exploring the metaphors that shaped the language of computing.</p>
+    <a href="/blog/logs-moths-firewalls/" class="read-more">Continue reading</a>
+  </div>
+</article>
+<article class="feat-card" data-category="JavaScript">
+  <a href="/blog/node-js-the-silent-engine-of-modern-web-apps/" class="feat-card-image-link">
+    <img
+      src="/assets/blog/node-js-cover.jpg"
+      alt=""
+      class="feat-card-image"
+      loading="lazy"
+    />
+  </a>
+  <div class="feat-card-content">
+    <div class="post-meta">
+      
+        <span class="post-category">JavaScript</span>
+      
+      
+    </div>
+    <h3 class="feat-card-title">
+      <a href="/blog/node-js-the-silent-engine-of-modern-web-apps/">Node.js, the silent engine of modern web apps</a>
+    </h3>
+    <p class="feat-card-excerpt">In this article, we&#39;ll dive into what Node.js is, why it&#39;s so popular, and a few fun facts that make it an essential tool in today’s tech ecosystem.</p>
+    <a href="/blog/node-js-the-silent-engine-of-modern-web-apps/" class="read-more">Continue reading</a>
+  </div>
+</article>
+<article class="feat-card" data-category="CSS">
+  <a href="/blog/min-max-importance-correct-approach-web-design/" class="feat-card-image-link">
+    <img
+      src="/assets/blog/japanese-web-design-feat-img-blog.png"
+      alt=""
+      class="feat-card-image"
+      loading="lazy"
+    />
+  </a>
+  <div class="feat-card-content">
+    <div class="post-meta">
+      
+        <span class="post-category">CSS</span>
+      
+      
+    </div>
+    <h3 class="feat-card-title">
+      <a href="/blog/min-max-importance-correct-approach-web-design/">Min or max? The importance of the correct approach in web design</a>
+    </h3>
+    <p class="feat-card-excerpt">Explore the cultural contrasts between Western minimalist and Japanese maximalist web design.</p>
+    <a href="/blog/min-max-importance-correct-approach-web-design/" class="read-more">Continue reading</a>
+  </div>
+</article>
+
+    </div>
+
+  </div>
+</section>
+
+
+    </main>
+ 
+    <footer class="site-footer">
+  <p>
+    <span><a href="#">vm</a></span>
+  </p>
+  <p>© 2025 VM WebDev. All rights reserved.</p>
+</footer>
+
+  </body>
+</html>

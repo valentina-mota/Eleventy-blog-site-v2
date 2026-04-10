@@ -1,0 +1,25 @@
+<article class="feat-card" data-category="{{ post.data.category }}">
+  <a href="{{ post.url }}" class="feat-card-image-link">
+    <img
+      src="{{ post.data.image }}"
+      alt="{{ post.data.imageAlt }}"
+      class="feat-card-image"
+      loading="lazy"
+    />
+  </a>
+  <div class="feat-card-content">
+    <div class="post-meta">
+      {% if post.data.category %}
+        <span class="post-category">{{ post.data.category }}</span>
+      {% endif %}
+      {% if post.data.guest %}
+        <span class="post-guest">✍ {{ post.data.guest.name }}</span>
+      {% endif %}
+    </div>
+    <h3 class="feat-card-title">
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h3>
+    <p class="feat-card-excerpt">{{ post.data.description }}</p>
+    <a href="{{ post.url }}" class="read-more">Continue reading</a>
+  </div>
+</article>

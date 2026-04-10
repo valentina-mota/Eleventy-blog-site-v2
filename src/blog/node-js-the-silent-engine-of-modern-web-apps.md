@@ -6,6 +6,7 @@ tags: ["post", "featured"]
 image: /assets/blog/node-js-cover.jpg
 imageAlt:
 description: In this article, we'll dive into what Node.js is, why it's so popular, and a few fun facts that make it an essential tool in today’s tech ecosystem.
+category: JavaScript
 ---
 
 ## Introduction

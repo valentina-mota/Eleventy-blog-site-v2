@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A personal tech blog built with JAMstack technology, featuring articles on modern web development.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://vm-webdev-tech-blog.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog Homepage">
+    <meta property="og:description" content="A personal tech blog built with JAMstack technology, featuring articles on modern web development.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/valentina-mota/web-images/refs/heads/main/opengraph-thumbnail-1200x630.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="vm-webdev-tech-blog.netlify.app">
+    <meta property="twitter:url" content="https://vm-webdev-tech-blog.netlify.app">
+    <meta name="twitter:title" content="Blog Homepage">
+    <meta name="twitter:description" content="A personal tech blog built with JAMstack technology, featuring articles on modern web development.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/valentina-mota/web-images/refs/heads/main/opengraph-thumbnail-1200x630.png">
+
+    <!-- Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+
+    <title>Do Voice Assistants Really Listen to Everything We Say?</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/logo/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+  <div class="container">
+    <div class="page-header__content">
+      <div class="header__img">
+        <a
+          href="https://vm-webdev-tech-blog.netlify.app/"
+          ><img
+            src="https://raw.githubusercontent.com/valentina-mota/web-images/refs/heads/main/vm_logo-blog.png"
+            alt="Valentina Mota blog logo"
+        /></a>
+      </div>
+      <nav>
+        <ul role="list" class="nav-list flex-group">
+          <li>
+            <a href="/">BLOG</a>
+          </li>
+          <li>
+            <a href="/blog/">ARCHIVE</a>
+          </li>
+          <li>
+            <a href="https://valentinamota.me" rel = "noreferrer noopener" target="_blank"> PORTFOLIO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main>
+      
+<article class="main-article">
+  <div class="container container--narrow flow">
+    <h1 class="article-title">
+      Do Voice Assistants Really Listen to Everything We Say?
+    </h1>
+    <figure class="main-article__figure">
+      <img src="/assets/blog/veronica-paolucci-alexa-blog.png" alt="" />
+      <figcaption></figcaption>
+    </figure>
+
+    <p>Imagine this: you're having dinner with friends, talking casually. At some point, someone mentions their brand-new leaf shredder. You ask a few questions, talk about it for a while, and then the conversation moves on.</p>
+<p>Later that evening, while you're clearing the table, you realize you've run out of dish soap. You open an app to buy it... and suddenly you're surrounded by ads for leaf shredders.</p>
+<p>At that moment, the suspicion is almost automatic: was it just a coincidence, or did your voice assistant hear everything?</p>
+<h2>How it all started</h2>
+<p>To answer that, it helps to step back and look at how these systems actually work.</p>
+<p>Voice recognition has existed for decades, long before Alexa or Siri entered our homes. Early systems were extremely limited. They didn't &quot;understand&quot; language in any meaningful sense; they simply broke sounds into frequencies and matched them to predefined patterns. Even more advanced systems developed in the 1990s, while significantly more accurate, still relied on the same basic principle: transforming speech into signals and comparing them to known structures, sometimes using context to resolve ambiguity.</p>
+<p>What changed in the last fifteen years is not just the accuracy, but the nature of the interaction. With assistants like Siri, and later Alexa and Google Assistant, voice stopped being just an input method and became a conversational interface. Devices no longer just recognize what we say; they attempt to interpret what we mean.</p>
+<p>That shift is what brought voice assistants into everyday life.</p>
+<h2>Always listening (but not in the way you think)</h2>
+<p>Today, these systems are embedded almost everywhere, from smartphones to smart speakers. At the center of their functionality is a simple but often misunderstood mechanism: <strong>they are always listening.</strong></p>
+<p>This doesn't mean they are constantly recording everything and sending it to servers. The distinction is more subtle. The device continuously captures sound, because it has to detect a specific activation phrase, the so-called <strong>wake word</strong>. That detection happens locally. Only when the system believes it has heard something like &quot;Alexa&quot; or &quot;Hey Google&quot; does it begin recording and sending data to the cloud.</p>
+<p>From that point on, the process becomes much more complex. The audio is converted into text, the system tries to infer the user's intent, and then generates a response. All of this relies heavily on remote servers, not on the device itself. The reason is straightforward: the models required to interpret language at this level are computationally expensive, and maintaining them centrally is far more efficient. But there is also another reason, less technical and more strategic. <strong>Data has value, and centralizing processing means centralizing data.</strong></p>
+<p>This is where the first layer of discomfort begins.</p>
+<h2>When the system gets it wrong</h2>
+<p>In theory, anything that does not contain the wake word should be ignored. In practice, things are less straightforward. Voice assistants do not always get it right. They can activate by mistake, triggered by similar sounds, background conversations, or even audio coming from a television. Research from Northeastern University found that smart speakers can activate unintentionally <strong>up to nineteen times a day</strong>, with some of those activations lasting as long as forty-three seconds — well beyond the moment it takes the device to realize no one was actually talking to it. When that happens, short fragments of speech can be recorded and processed without any explicit intention from the user.</p>
+<p>This does not necessarily mean constant surveillance, but it does blur the boundary between intentional and unintentional interaction.</p>
+<p>And once an interaction is captured, it does not simply disappear. It becomes part of a broader system of data collection. Voice assistants build profiles over time, combining what you explicitly ask with patterns of usage, preferences, and contextual information linked to your account. Even if individual recordings are anonymized, the overall structure is not. It is designed to learn, adapt, and, inevitably, to categorize.</p>
+<p>There have also been cases where small portions of recorded audio were reviewed by human operators to improve system performance. While companies have stated that these samples are limited and anonymized, the fact remains: <strong>what is said in the presence of these devices can escape the private space of the home.</strong></p>
+<h2>A security problem that's easy to underestimate</h2>
+<p>Privacy, however, is only one part of the picture.</p>
+<p>From a security perspective, voice assistants introduce a set of vulnerabilities that are easy to underestimate. They are connected to the internet, integrated with other devices, and designed to respond to external input. This combination creates multiple points of exposure. In some cases, researchers have shown that it is possible to trigger commands using signals that are not even audible to the human ear, or to exploit weaknesses in third-party integrations. These scenarios are not part of everyday experience, but they reveal something important: <strong>the system is more porous than it appears.</strong></p>
+<h2>The commercial logic behind the hardware</h2>
+<p>It is also worth considering the commercial logic that shapes how these devices are designed. Smart speakers are sold at relatively low prices — and that is not a coincidence. The data generated through interactions is more valuable to manufacturers than the hardware itself. This explains several design choices that might otherwise seem arbitrary. The devices are small and unobtrusive, easy to forget about; some include clocks or weather displays, making them useful enough that users never switch them off; and most have no real power button. Unplugging them requires a deliberate effort that the average user will rarely make. The result is a device designed to stay on, stay in the room, and keep listening.</p>
+<h2>So, are they spying on us?</h2>
+<p>Not in the simplistic sense that they are constantly recording conversations to directly target advertisements. There is no solid evidence supporting that kind of behavior. But focusing on that question alone is misleading. <strong>The real issue is not whether they listen to everything, but how much can be inferred from what they do capture.</strong></p>
+<p>The data collected through interactions, even voluntary ones, is enough to build detailed behavioral profiles. Over time, these profiles become more valuable than any single piece of information. They allow systems to predict preferences, anticipate needs, and influence choices in ways that are largely invisible.</p>
+<p>This is where the feeling of being &quot;observed&quot; actually comes from. Not from a hidden microphone constantly spying, but from a system that gradually knows more than we expect.</p>
+<h2>What you can actually do</h2>
+<p>None of this means that voice assistants must be avoided entirely. It does mean, however, that a few practical adjustments can significantly reduce the exposure they create. Reviewing the privacy settings in the companion app and limiting the permissions granted to the assistant is a reasonable starting point. Deleting the interaction history periodically — or setting it to delete automatically — prevents the accumulation of data over time. Using the mute button during sensitive conversations, such as medical discussions, work meetings, or private moments, is a simple habit that limits unintentional recording. And if the device is integrated with smart locks or security systems, keeping it away from windows matters more than it might seem: researchers have demonstrated that it is possible to send inaudible commands to smart speakers using lasers, from over a hundred meters away, through closed windows.</p>
+<p>Using them safely is not about paranoia. It is about recognizing that convenience always comes with a structure behind it, and that structure is not designed primarily in the user's interest.</p>
+
+
+    
+    <div class="article-guest-author">
+      <div class="guest-author">
+        <img
+          src="/assets/veronica-paolucci-photo.jpg"
+          alt="Veronica Paolucci"
+          class="guest-author-photo"
+        />
+        <div class="guest-author-info">
+          <strong class="guest-author-name">Veronica Paolucci</strong>
+          <span class="guest-author-role">Cybersecurity Specialist</span>
+        </div>
+      </div>
+      <p class="guest-author-bio">Veronica writes and talks about cybersecurity in plain language, from phishing to AI threats, from real hacking cases to digital self-defence.</p>
+      
+      <div class="guest-author-links">
+        
+          <a href="https://youtube.com/@veronica.paolucci" target="_blank" rel="noopener" class="guest-link guest-link-yt">▶ YouTube</a>
+        
+        
+          <a href="https://veronicapaolucci.substack.com" target="_blank" rel="noopener" class="guest-link guest-link-sub">✉ Substack</a>
+        
+      </div>
+      
+    </div>
+    
+
+  </div>
+</article>
+
+    </main>
+ 
+    <footer class="site-footer">
+  <p>
+    <span><a href="#">vm</a></span>
+  </p>
+  <p>© 2025 VM WebDev. All rights reserved.</p>
+</footer>
+
+  </body>
+</html>

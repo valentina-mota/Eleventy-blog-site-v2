@@ -1,39 +1,54 @@
 ---
-title: Blog
+title: Archive
 layout: "base.njk"
 ---
 
-<div class="section container">
-  <h1 class="section-title">All Articles</h1>
-  <ul role="list" class="articles__list flow">
-    {%- for post in collections.post | reverse -%} {% include
-    "article-snippet.njk" %} {%- endfor %}
-  </ul>
-</div>
+{# Collect unique categories #}
+{% set categories = [] %}
+{% for post in collections.post %}
+  {% if post.data.category and post.data.category not in categories %}
+    {% set categories = (categories.push(post.data.category), categories) %}
+  {% endif %}
+{% endfor %}
 
-<!--
-  <ul role="list" class="articles__list flow">
-    <li>
-      <article class="snippet">
-        <img
-          src="/assets/blog/carbon-2021-06-11t092807.024.png"
-          alt="a man on his computer"
-          class="snippet__image"
-        />
-        <h3 class="snippet__title">
-          <a href="/blog/another-article/">Another article!!</a>
-        </h3>
-        <p class="snippet__meta">
-          by <span>Kevin Powell</span> on <span>Jun 15, 2021</span>
+<section class="archive-section">
+  <div class="container">
+
+    <div class="archive-header">
+      <p class="hero-kicker">All articles</p>
+      <h1 class="section-heading">Archive</h1>
+    </div>
+
+    <div class="content-grid">
+
+      <!-- Posts column -->
+      <div class="posts-area">
+        <div class="archive-toolbar">
+          <input
+            type="text"
+            id="archive-search"
+            placeholder="Search articles…"
+            aria-label="Search articles"
+          />
+        </div>
+        <p id="archive-count" class="archive-count"></p>
+
+        <ul role="list" class="archive-list" id="posts-list">
+          {%- for post in collections.post | reverse -%}
+            {% include "article-snippet.njk" %}
+          {%- endfor %}
+        </ul>
+
+        <p class="archive-empty" id="empty-state" style="display:none">
+          No articles found.
         </p>
-        <p class="snippet__body">
-          This is a new article that I&#39;ll be posting
-        </p>
-        <a href="/blog/another-article/" class="btn btn--primary"
-          >Continue Reading</a
-        >
-      </article>
-    </li>
-    
-  </ul>
--->
+      </div>
+
+      <!-- Sidebar -->
+      {% include "sidebar.njk" %}
+
+    </div>
+  </div>
+</section>
+
+<script src="/assets/filter.js"></script>
