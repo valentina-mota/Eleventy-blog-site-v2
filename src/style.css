@@ -458,7 +458,7 @@ footer span:hover a { color: white; }
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s, transform 0.2s;
 }
-.archive-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.archive-card:hover { box-shadow: var(--shadow-md); }
 
 .archive-card-image {
   width: 100%;
