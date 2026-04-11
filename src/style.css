@@ -842,7 +842,11 @@ footer span:hover a { color: white; }
 .featured-main { min-width: 0; }
 
 @media (max-width: 860px) {
-  .featured-with-sidebar { grid-template-columns: 1fr; }
+  .featured-with-sidebar {
+    grid-template-columns: 1fr;
+  }
+  .featured-main { order: 2; }
+  .sidebar { order: 1; }
 }
 
 /* ─── Responsive ─────────────────────────────────────────────────── */
